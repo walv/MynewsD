@@ -51,6 +51,7 @@ if(!isset($_SESSION['user_id']))
       <div class="panel panel-default">
         <div class="panel-heading">Home <i class="fa fa-link fa-1x"></i></div>
         <div class="panel-body"><a href="index.php">NewsAndDiscuss</a></div>
+        <div class="panel-body"><a href="index_chatting.php">ChitChat</a></div>
       
       </div>
       <div class="panel panel-default">
@@ -93,16 +94,9 @@ if(!isset($_SESSION['user_id']))
                           
                           <div class="col-xs-6">
                               <label for="first_name"><h4>Username:</h4><h4><?php echo $_SESSION['username']; ?></h4></label>
-                              <p><?= $username ?></p>
-                            </div>
+                             </div>
                       </div>
           
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                          <td><?php echo $d['nama']; ?></td>
-                          </div>
-                      </div>
         
                           <div class="col-xs-6">
                               <label for="email"><h4>Email</h4></label>
