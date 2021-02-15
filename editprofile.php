@@ -13,7 +13,6 @@ if(!isset($_SESSION['user_id']))
 
 ?>
 <html>
-
 <head>
 <title>Input Data Registrasi</title>
 	<meta charset="UTF-8">
@@ -23,8 +22,10 @@ if(!isset($_SESSION['user_id']))
 
 <body>
 
+
 <div class="card">
-    <div class="card-body">
+<p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p> 
+<div class="card-body">
         <h5 class="card-title">Edit profile</h5>
         <a href="dashboard.php" class="btn btn-danger btn-md">kembali</a>
     </div>
@@ -77,7 +78,10 @@ if(!isset($_SESSION['user_id']))
 			<!-- end form -->
 		</div>
 	</div>
-
+      <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+    <!-- /.container -->
+  </footer>
+</html>
 </body>
-
+    
 </html>

@@ -74,3 +74,5 @@ if(isset($_POST["login"]))
       <p>Or</p>
       <a class="btn btn-danger btn-lg " href="register.php"><u>Daftar</u></a>
      </form>
+     <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+    

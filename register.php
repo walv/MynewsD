@@ -146,4 +146,6 @@ if($statement->execute($check_data))
      </form>
     </div>
    </div>
-   </div>
+   <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+     
+  </div>

@@ -72,10 +72,9 @@ if(!isset($_SESSION['user_id']))
           </ul> 
                
           <div class="panel panel-default">
-            <div class="panel-heading">Social Media</div>
+            <div class="panel-heading">CopyRight</div>
             <div class="panel-body">
-            	<i class="fa fa-facebook fa-2x"></i> <i class="fa fa-github fa-2x"></i> <i class="fa fa-twitter fa-2x"></i> <i class="fa fa-pinterest fa-2x"></i> <i class="fa fa-google-plus fa-2x"></i>
-            </div>
+                </div>
           </div>
           
         </div><!--/col-3-->
@@ -109,7 +108,12 @@ if(!isset($_SESSION['user_id']))
                               	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
                                	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
                             </div>
-                      </div>
+     
+                            <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+    </div>
+                     </div>
               	</form>
               
              
@@ -118,6 +122,10 @@ if(!isset($_SESSION['user_id']))
               </div><!--/tab-pane-->
           </div><!--/tab-content-->
 
+
         </div><!--/col-9-->
-    </div><!--/row-->
+        <div><p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p></div>
+         <!-- /.container -->
+  </footer>   
+      </div><!--/row-->
                                                       

@@ -2,6 +2,7 @@
 <?php
 include('config/database_connection.php');
 include_once 'header.php';
+
 //session_start();
  
 if(!isset($_SESSION['user_id']))
@@ -96,6 +97,9 @@ right:3px;
 <div class="form-group" align="right">
   <button type="button" name="send_group_chat" id="send_group_chat" class="btn btn-info btn-sm"><span class="fa fa-paper-plane"></span> Kirim</button>
 </div>
+
+<p class="m-0 text-center text-white small black">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+ 
 </div>
  
  
