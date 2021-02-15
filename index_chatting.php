@@ -10,7 +10,7 @@ header("location:login.php");
 }
  
 ?>
- 
+  <link  rel="stylesheet" href="css/logandreg.css">
    <h5>CHITCHAT ONLINE</h5>
 <a href="index.php" class="btn btn-light"><span class="fa fa-arrow-left"></span> Balik</a>
 <div class="alert alert-warning" role="alert">

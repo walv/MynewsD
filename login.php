@@ -55,8 +55,8 @@ if(isset($_POST["login"]))
 }
  
 ?>
-  <link href="css/style.css" rel="stylesheet">
-   <h3 align="center">ChitChat</a></h3><br />
+   <link  rel="stylesheet" href="css/logandreg.css">
+   <h3 align ="center">ChitChat</a></h3><br />
  
      <form method="post">
       <p class="text-danger"><?php echo $message; ?></p>
@@ -72,5 +72,5 @@ if(isset($_POST["login"]))
        <input type="submit" name="login" class="btn btn-primary btn-lg " value="Masuk" />
       </div>
       <p>Or</p>
-      <a class="btn btn-danger btn-lg " href="register.php"><u>Login</u></a>
+      <a class="btn btn-danger btn-lg " href="register.php"><u>Daftar</u></a>
      </form>

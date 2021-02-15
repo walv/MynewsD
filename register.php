@@ -68,8 +68,8 @@ if($statement->execute($check_data))
 }
  
 ?>
- <link href="css/style.css" rel="stylesheet">
-   <h3 align="center">ChitChat</a></h3><br />
+   <link  rel="stylesheet" href="css/logandreg.css">
+   <h3 align="center">MyNewsDiscuss</a></h3><br />
    <br />
    <div class="container-sm">
 
@@ -79,7 +79,7 @@ if($statement->execute($check_data))
      <form method="post">
       <span class="text-danger"><?php echo $message; ?></span>
       <div class="form-group">
-       <label>Masukkan Nama</label>
+       <label>Masukkan Username</label>
        <input type="text" name="username" class="form-control form-control-lg" />
       </div>
       <div class="form-group">
