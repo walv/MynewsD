@@ -78,8 +78,10 @@ if(!isset($_SESSION['user_id']))
 			<!-- end form -->
 		</div>
 	</div>
-      <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
-    <!-- /.container -->
+    <footer style="text-align: center;">
+        <p>Copyright &copy; 18111057-FransiscusWaldesSinaga-TIFRP18CIDA-UASWEB1</p>
+    </footer>
+  </footer>
   </footer>
 </html>
 </body>

@@ -11,8 +11,9 @@ header("location:login.php");
 }
  
 ?>
-  <link  rel="stylesheet" href="css/logandreg.css">
    <h5>CHITCHAT ONLINE</h5>
+   <p class="m-0 text-center text-white small black">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+
 <a href="index.php" class="btn btn-light"><span class="fa fa-arrow-left"></span> Balik</a>
 <div class="alert alert-warning" role="alert">
 "selamat datang di halaman ChitChat, kamu bisa berkomunikasi dengan pengguna yang sama disini"
@@ -97,9 +98,9 @@ right:3px;
 <div class="form-group" align="right">
   <button type="button" name="send_group_chat" id="send_group_chat" class="btn btn-info btn-sm"><span class="fa fa-paper-plane"></span> Kirim</button>
 </div>
-
-<p class="m-0 text-center text-white small black">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
- 
+<footer style="text-align: center;">
+        <p>Copyright &copy; 2021 Walv</p>
+    </footer> 
 </div>
  
  

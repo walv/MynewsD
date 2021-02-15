@@ -127,7 +127,7 @@ if($statement->execute($check_data))
        <input type="text" name="alamat" class="form-control form-control-lg" />
       </div>
       <label>Masukkan pekerjaan</label>
-       <input type="email" name="pekerjaan" class="form-control form-control-lg" />
+       <input type="text" name="pekerjaan" class="form-control form-control-lg" />
       </div>
       <div class="form-group">
        <label>Kata sandi</label>

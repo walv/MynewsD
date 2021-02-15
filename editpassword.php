@@ -95,6 +95,8 @@
     <a href="dashboard.php" class="btn btn-danger md">kembali</a>
 	<!-- selesai form rubah password -->
 </body>
-<p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
-    
+<footer style="text-align: center;">
+        <p>Copyright &copy; 18111057-FransiscusWaldesSinaga-TIFRP18CIDA-UASWEB1</p>
+    </footer>
+  </footer>
 </html>
