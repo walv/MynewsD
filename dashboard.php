@@ -6,6 +6,7 @@ include_once 'header.php';
 
 if(!isset($_SESSION['user_id']))
 {
+
   header("location:login.php");
 }
 
@@ -108,12 +109,7 @@ if(!isset($_SESSION['user_id']))
                               	<button class="btn btn-lg btn-success" type="submit"><i class="glyphicon glyphicon-ok-sign"></i> Save</button>
                                	<button class="btn btn-lg" type="reset"><i class="glyphicon glyphicon-repeat"></i> Reset</button>
                             </div>
-     
-                            <footer class="py-5 bg-black">
-    <div class="container">
-      <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
-    </div>
-                     </div>
+                      </div>
               	</form>
               
              
@@ -124,8 +120,12 @@ if(!isset($_SESSION['user_id']))
 
 
         </div><!--/col-9-->
-        <div><p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p></div>
-         <!-- /.container -->
+        <div></div>
+        <footer class="py-5 bg-black">
+    <div class="container">
+      <p class="m-0 text-center text-white small">Copyright &copy; 18111057-Fransiscus Waldes Sinaga -TIFRP18CIDA-UASWEB1</p>
+    </div>
+    <!-- /.container -->
   </footer>   
       </div><!--/row-->
                                                       
