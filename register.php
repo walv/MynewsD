@@ -14,6 +14,12 @@ if(isset($_POST["register"]))
 {
 $username = trim($_POST["username"]);
 $password = trim($_POST["password"]);
+$nama = trim($_POST["nama"]);
+$email = trim($_POST["email"]);
+$umur = trim($_POST["umur"]);
+$alamat = trim($_POST["alamat"]);
+$pekerjaan = trim($_POST["pekerjaan"]);
+
 $check_query = "
 SELECT * FROM login
 WHERE username = :username
@@ -32,7 +38,27 @@ if($statement->execute($check_data))
   {
    if(empty($username))
    {
+    $message .= '<p><label>Harap isi Username !</label></p>';
+   }
+   if(empty($nama))
+   {
     $message .= '<p><label>Harap isi Nama !</label></p>';
+   }
+   if(empty($email))
+   {
+    $message .= '<p><label>Harap isi email !</label></p>';
+   }
+   if(empty($umur))
+   {
+    $message .= '<p><label>Harap isi umur !</label></p>';
+   }
+   if(empty($alamat))
+   {
+    $message .= '<p><label>Harap isi alamat !</label></p>';
+   }
+   if(empty($pekerjaan))
+   {
+    $message .= '<p><label>Harap isi pekerjaan !</label></p>';
    }
    if(empty($password))
    {
@@ -49,14 +75,18 @@ if($statement->execute($check_data))
    {
     $data = array(
      ':username'  => $username,
-     ':password'  => password_hash($password, PASSWORD_DEFAULT)
+     ':password'  => password_hash($password, PASSWORD_DEFAULT),
+     ':nama'  => $nama,
+     ':email'  => $email,
+     ':umur'  => $umur,
+     ':alamat'  => $alamat,
+     ':pekerjaan'  => $pekerjaan,
     );
  
     $query = "
     INSERT INTO login
-    (username, password)
-    VALUES (:username, :password)
-    ";
+    (username, password,nama,email, umur, alamat, pekerjaan)
+    VALUES (:username, :password, :nama, :email,:umur,:alamat,:pekerjaan)";
     $statement = $connect->prepare($query);
     if($statement->execute($data))
     {
@@ -81,6 +111,23 @@ if($statement->execute($check_data))
       <div class="form-group">
        <label>Masukkan Username</label>
        <input type="text" name="username" class="form-control form-control-lg" />
+      </div>
+      <div class="form-group">
+       <label>Masukkan nama</label>
+       <input type="text" name="nama" class="form-control form-control-lg" />
+      </div>
+      <div class="form-group">
+       <label>Masukkan email</label>
+       <input type="email" name="email" class="form-control form-control-lg" />
+      </div>
+      <label>Masukkan umur</label>
+       <input type="number" name="umur" class="form-control form-control-lg" />
+      </div>
+      <label>Masukkan alamat</label>
+       <input type="text" name="alamat" class="form-control form-control-lg" />
+      </div>
+      <label>Masukkan pekerjaan</label>
+       <input type="email" name="pekerjaan" class="form-control form-control-lg" />
       </div>
       <div class="form-group">
        <label>Kata sandi</label>

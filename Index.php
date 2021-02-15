@@ -65,7 +65,7 @@ header("location:home.php");
                         
                     </ul>
                     <div class="d-flex justify-content-start">
-                <img src="../src/images/potrait.jpg" height="40px" width="40px" style="border-radius: 50%;">
+                    <img src="http://ssl.gstatic.com/accounts/ui/avatar_2x.png" class="avatar img-circle img-thumbnail" alt="avatar" height="40px" width="40px" style="border-radius: 50%;">
                 <div class="input-group ml-2">
                     <button class="btn btn-outline-secondary dropdown-toggle" type="button" data-toggle="dropdown"
                         aria-haspopup="true" aria-expanded="false"

@@ -30,6 +30,7 @@ if(!isset($_SESSION['user_id']))
 </head>
 
 
+
 <hr>
 <div class="container bootstrap snippet">
   <div class="row">
@@ -50,6 +51,13 @@ if(!isset($_SESSION['user_id']))
       <div class="panel panel-default">
         <div class="panel-heading">Home <i class="fa fa-link fa-1x"></i></div>
         <div class="panel-body"><a href="index.php">NewsAndDiscuss</a></div>
+      
+      </div>
+      <div class="panel panel-default">
+        <div class="panel-heading">Function <i class="fa fa-link fa-1x"></i></div>
+        <div class="panel-body"><a href="editpassword.php">Edit password</a></div>
+        <div class="panel-body"><a href="editprofile.php">Edit profile</a></div>
+        
       
       </div>
           
@@ -78,42 +86,26 @@ if(!isset($_SESSION['user_id']))
               
           <div class="tab-content">
             <div class="tab-pane active" id="home">
-                <hr>
+               
+            <hr>
                   <form class="form" action="##" method="post" id="registrationForm">
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="first_name"><h4>First name</h4></label>
-                              <input type="text" class="form-control" name="first_name" id="first_name" placeholder="first name" title="enter your first name if any.">
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          
-                          <div class="col-xs-6">
-                            <label for="last_name"><h4>Last name</h4></label>
-                              <input type="text" class="form-control" name="last_name" id="last_name" placeholder="last name" title="enter your last name if any.">
-                          </div>
+                              <label for="first_name"><h4>Username:</h4><h4><?php echo $_SESSION['username']; ?></h4></label>
+                              <p><?= $username ?></p>
+                            </div>
                       </div>
           
                       <div class="form-group">
                           
                           <div class="col-xs-6">
-                              <label for="phone"><h4>Phone</h4></label>
-                              <input type="text" class="form-control" name="phone" id="phone" placeholder="enter phone" title="enter your phone number if any.">
+                          <td><?php echo $d['nama']; ?></td>
                           </div>
                       </div>
-          
-                      <div class="form-group">
-                          <div class="col-xs-6">
-                             <label for="mobile"><h4>Mobile</h4></label>
-                              <input type="text" class="form-control" name="mobile" id="mobile" placeholder="enter mobile number" title="enter your mobile number if any.">
-                          </div>
-                      </div>
-                      <div class="form-group">
-                          
+        
                           <div class="col-xs-6">
                               <label for="email"><h4>Email</h4></label>
-                              <input type="email" class="form-control" name="email" id="email" placeholder="you@email.com" title="enter your email.">
                           </div>
                       </div>
                       <div class="form-group">

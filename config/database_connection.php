@@ -1,7 +1,24 @@
+
 <?php
+$database_hostname = 'localhost';
+$database_username = 'root';
+$database_password = '';
+$database_name     = 'db_mt1webapp';
+
+try {
+    $conn = new PDO("mysql:host=$database_hostname;dbname=$database_name",
+        $database_username,
+        $database_password);
+        
+} catch (PDOException $err) {
+    die($err->getMessage());
+}
+//---------------------------------------------------------------------------------------
+
 $connect = new PDO("mysql:host=localhost;dbname=db_mt1webapp;charset=utf8mb4", "root", "");
 date_default_timezone_set('Asia/Kolkata');
- 
+
+
 //---------------------------------------------------------------------------------------
 function fetch_user_last_activity($user_id, $connect)
 {
